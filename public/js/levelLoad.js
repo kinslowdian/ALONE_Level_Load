@@ -2,6 +2,7 @@
 var trace = function(msg){ console.log(msg); };
 
 var displayList;
+var system;
 
 var level_upgrade_to;
 
@@ -19,15 +20,31 @@ function setup()
 	displayList.levelHolderWipe = document.querySelector(".level-holder .wipe");
 	displayList.lib = document.querySelector(".lib");
 
-	lib_load();
+	system = {};
+
+	project_data_init();
 }
 
-function lib_load()
+function project_data_init()
 {
-	load_ext_data("public/data/lib.html", lib_load_loaded, false);
+	load_ext_data('public/data/setup.json', project_data_loaded, true);
 }
 
-function lib_load_loaded(data)
+function project_data_loaded(data)
+{
+	system.data = JSON.parse(data);
+
+	trace(system.data);
+
+	project_lib_init();
+}
+
+function project_lib_init()
+{
+	load_ext_data("public/data/lib.html", project_lib_loaded, false);
+}
+
+function project_lib_loaded(data)
 {
 	displayList.lib.innerHTML = data;
 

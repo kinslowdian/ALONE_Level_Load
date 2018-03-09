@@ -1,0 +1,124 @@
+{
+	"SYSTEM":
+	{
+		"sectionProps":
+		{
+			"w": 110,
+			"h": 250
+		}
+	},
+
+	"LEVELS":
+	[
+		{
+			"data_id": 0,
+
+			"sections":
+			[
+				{
+					"num_ref": 0, 
+					"x": 100, 
+					"y": 415, 
+					"isAnItem": false, 
+					"item_ref": "none", 
+					"devVis": "#333",
+					"ignore": false, 
+					"respond": 
+					{
+						"U": "none",
+						"D": "none",
+						"L": "none",
+						"R": 4
+					}
+				},
+
+				{
+					"num_ref": 1, 
+					"x": 945, 
+					"y": 415, 
+					"isAnItem": false, 
+					"item_ref": "none", 
+					"devVis": "#333",
+					"ignore": false,
+					"respond":
+					{
+						"U": "none",
+						"D": "none",
+						"L": 4,
+						"R": 2
+					}
+				},
+				
+				{
+					"num_ref": 2, 
+					"x": 1385, 
+					"y": 215, 
+					"isAnItem": false, 
+					"item_ref": "none", 
+					"devVis": "#333",
+					"ignore": false,
+					"respond":
+					{
+						"U": "none",
+						"D": "none",
+						"L": 1,
+						"R": 3
+					}
+				},
+				
+				{
+					"num_ref": 3, 
+					"x": 1890, 
+					"y": 215, 
+					"isAnItem": false, 
+					"item_ref": "none", 
+					"devVis": "#333",
+					"ignore": false,
+					"respond":
+					{
+						"U": "none",
+						"D": "none",
+						"L": 2,
+						"R": "none"
+					}
+				},
+				
+				{
+					"num_ref": 4, 
+					"x": 470, 
+					"y": 415, 
+					"isAnItem": true, 
+					"item_ref": 0, 
+					"devVis": "none",
+					"ignore": false,
+					"respond":
+					{
+						"U": "none",
+						"D": true,
+						"L": 0,
+						"R": 1
+					}					
+				}
+			],
+
+			"items":
+			[
+				{
+					"num_ref": 0, 
+					"cssBuild": "item0", 
+					"htmlBuild": "<div class='item0 item-ball'></div>",
+					"found":
+					{
+						"f": "message_item_new",
+						"p": 
+						{
+							"h": "<div class='message-content'><p>Lorem ipsum</p></div>", 
+							"r": true,
+							"t": 4
+						}
+					}
+				}
+			]
+		}
+	]
+}
