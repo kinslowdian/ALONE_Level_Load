@@ -21,15 +21,11 @@ function setup()
 
 function lib_load()
 {
-	displayList.lib.innerHTML = '<object type="text/html" data="public/data/lib.html"></object>';
-
-	test();
+	load_ext_data("public/data/lib.html", lib_load_loaded, false);
 }
 
-function test()
+function lib_load_loaded(data)
 {
-	let test_div = document.querySelector(".lib .lib_level1");
-
-	trace(test_div);
+	displayList.lib.innerHTML = data;
 }
 

@@ -51,6 +51,7 @@ html, body
 {
 	position: absolute;
 	visibility: hidden;
+	overflow: hidden;
 }
 
 .level
