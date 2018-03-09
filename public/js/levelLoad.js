@@ -22,6 +22,7 @@ function setup()
 
 	system = {};
 
+	// LOAD STAGE 0
 	project_data_init();
 }
 
@@ -30,12 +31,14 @@ function project_data_init()
 	load_ext_data('public/data/setup.json', project_data_loaded, true);
 }
 
+// LOADED STAGE 0
 function project_data_loaded(data)
 {
 	system.data = JSON.parse(data);
 
 	trace(system.data);
 
+	// LOAD STAGE 1
 	project_lib_init();
 }
 
@@ -44,6 +47,7 @@ function project_lib_init()
 	load_ext_data("public/data/lib.html", project_lib_loaded, false);
 }
 
+// LOADED STAGE 1
 function project_lib_loaded(data)
 {
 	displayList.lib.innerHTML = data;
